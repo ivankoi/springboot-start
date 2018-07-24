@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Occurred!</title>
+</head>
+<body>
+<h1>Error Occurred!</h1>
+<b>
+    [<!--/*@thymesVar id="status" type="org.springframework.http.HttpStatus"*/-->
+    <span th:text="${status}">status</span>]
+    <!--/*@thymesVar id="error" type="java.lang.RuntimeException"*/-->
+    <span th:text="${error}">error</span>
+</b>
+<!--/*@thymesVar id="message" type="java.lang.String"*/-->
+<p th:text="${message}">message</p>
+</body>
+</html>
